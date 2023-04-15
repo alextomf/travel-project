@@ -208,7 +208,7 @@ footer {
       rgba(10, 65, 99, 0.8),
       rgba(10, 65, 99, 0.8)
     ),
-    url("/img/iceberg.jpg");
+    url("/img/puffins.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--background-color);
