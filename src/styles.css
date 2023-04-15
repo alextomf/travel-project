@@ -4,9 +4,18 @@
   --background-color: #ffffff;
 }
 
+body {
+  font-family: var(--default-font-family);
+  background: var(--default-color);
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grid {
@@ -18,24 +27,60 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background: var(--background-color);
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #1e5d85;
+  text-decoration: none;
+}
+
+.activity-name {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--default-color);
+}
+
 .img-responsive {
   max-width: 100%;
-  border-radius: 5px;
+  display: block;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
-body {
-  font-family: var(--default-font-family);
-  background: var(--default-color);
+section.secondary {
+  background: #deedff;
 }
 
 header {
@@ -71,11 +116,11 @@ header h3 {
 }
 
 header a {
+  color: var(--default-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: var(--default-color);
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
@@ -90,22 +135,49 @@ main {
 }
 
 main h2 {
+  color: var(--default-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
   letter-spacing: 5px;
-  color: var(--default-color);
   opacity: 0.3;
   text-transform: uppercase;
 }
 
 main h3 {
+  color: var(--default-color);
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
-  color: var(--default-color);
   margin: 0;
+}
+
+main h4 {
+  color: var(--default-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+}
+
+main h5 {
+  color: var(--default-color);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  margin: 0;
+}
+
+main a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--default-color);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
 }
 
 main p {
